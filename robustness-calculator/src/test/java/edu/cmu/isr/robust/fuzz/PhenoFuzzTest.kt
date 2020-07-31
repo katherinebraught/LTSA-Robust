@@ -52,9 +52,12 @@ class PhenoFuzzTest {
 
     val results = fuzz.mutationIter(listOf("hLiftHandle", "hPlaceMug", "hAddOrReplacePod", "hLowerHandle", "hPressBrew", "mBrewDone"))
 
-    for (result in results) {
-      println(result)
-    }
+    println(results.next())
+    println(results.next())
+    println(results.next())
+    println(results.next())
+    println(results.next())
+
 
   }
 }
